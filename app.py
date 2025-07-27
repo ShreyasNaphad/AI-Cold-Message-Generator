@@ -4,7 +4,7 @@ from transformers import pipeline
 # ✅ Cache model so it loads only once
 @st.cache_resource
 def load_model():
-    return pipeline("text2text-generation", model="google/flan-t5-small")
+    return pipeline("text2text-generation", model="google/flan-t5-base")
 
 generator = load_model()
 
